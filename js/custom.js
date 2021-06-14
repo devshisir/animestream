@@ -130,6 +130,50 @@ $(document).ready(function () {
       }
    });
 
+
+
+   // hot seris home page custom slider
+   $('#hot_seris_custom_slider').owlCarousel({
+      center: false,
+      loop: false,
+      nav: false,
+      dots: false,
+      margin: 0,
+      autoplay: false,
+      autoplayTimeout: 5000,
+      autoplayHoverPause: true,
+      responsive: {
+         0: {
+            items: 1,
+            stagePadding: 60,
+            loop: true,
+         },
+         576: {
+            items: 3,
+            stagePadding: 40,
+            loop: true,
+         },
+         768: {
+            items: 4,
+            stagePadding: 100,
+         },
+         992: {
+            items: 3,
+            stagePadding: 50,
+         },
+         1200: {
+            items: 4,
+            stagePadding: 50,
+         },
+         1400: {
+            items: 5,
+            stagePadding: 0,
+         }
+      }
+   });
+
+
+
 });
 
 
